@@ -7,14 +7,6 @@
   "dependencies": {
     "typescript": "^5.0.3"
   },
-  "dependencySrcSLinks": [
-    { "project": "i_io.ts.adligo.org" },
-    { "project": "i_obj.ts.adligo.org"},
-    { "project": "i_strings.ts.adligo.org"},
-    {"project": "i_log2.ts.adligo.org"},
-    {"project": "log2.ts.adligo.org"},
-    {"project": "tests4ts.ts.adligo.org"}
-  ],
   "devDependencies": {
     "@types/node": "^18.15.12",
 	"@types/jest": "^29.4.0",
@@ -41,6 +33,8 @@
 	"test": "jest",
     "tsc": "tsc"
   },
+  "sharedNodeModuleProjectSLinkEnvVar": ["JUNIT_XML_NODE_MODULE_SLINK"],
+  "sharedNodeModuleProjectSLinks": ["slink_group_deps.ts.adligo.org", "fab_group_deps.ts.adligo.org"],
   "type": "module",
   "version": "0.0.1"
 }
