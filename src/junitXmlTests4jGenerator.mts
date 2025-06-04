@@ -19,7 +19,7 @@
 // The following commented out xml tags with slinks will flag to the slink command line program, that these paths can be modfied 
 // from the slink logic instead of hard coding them like I have currently done.
 //<slinks>
-import { ApiTrial, I_XmlConverter, TestResult } from '../../tests4ts.ts.adligo.org/src/tests4ts.mjs';
+import { ApiTrial, I_XmlConverter, TestResult } from '@ts.adligo.org/tests4ts/dist/tests4ts.mjs';
 //</slinks>
 
 /**
