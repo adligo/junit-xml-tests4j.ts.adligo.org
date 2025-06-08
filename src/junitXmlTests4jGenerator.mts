@@ -19,8 +19,10 @@
 // The following commented out xml tags with slinks will flag to the slink command line program, that these paths can be modfied 
 // from the slink logic instead of hard coding them like I have currently done.
 //<slinks>
-import {I_FileConverter} from "@ts.adligo.org/i_tests4ts/src/i_tests4ts.mjs";
-import { ApiTrial, TestResult } from '@ts.adligo.org/tests4ts/dist/tests4ts.mjs';
+import { I_FileConverter, I_TestResult, I_Trial
+} from "@ts.adligo.org/i_tests4ts/src/i_tests4ts.mjs";
+import { TestResult } from '@ts.adligo.org/tests4ts/dist/results.mjs';
+import { ApiTrial } from '@ts.adligo.org/tests4ts/dist/trials.mjs';
 //</slinks>
 
 /**
@@ -34,7 +36,7 @@ export class JUnitXmlGenerator implements I_FileConverter {
    * @param trial 
    * @returns 
    */
-  convert(trial: ApiTrial): string {
+  convert(trial: I_Trial): string {
     return this.generateXml(trial);
   }
 
@@ -48,7 +50,7 @@ export class JUnitXmlGenerator implements I_FileConverter {
    * @param hostname Optional hostname for the testsuite
    * @returns XML string in JUnit format
    */
-  public generateXml(trial: ApiTrial, hostname: string = 'localhost'): string {
+  public generateXml(trial: I_Trial, hostname: string = 'localhost'): string {
     const testResults = trial.getTestResults();
     const testCount = trial.getTestCount();
     const failureCount = trial.getFailureCount();
@@ -81,7 +83,7 @@ export class JUnitXmlGenerator implements I_FileConverter {
    * @param result The test result
    * @returns XML string for the test case
    */
-  private generateTestCaseXml(result: TestResult): string {
+  private generateTestCaseXml(result: I_TestResult): string {
     const testName = result.getName();
     const className = this.extractClassName(result.getName());
     const time = 0.001; // Placeholder since actual time isn't tracked

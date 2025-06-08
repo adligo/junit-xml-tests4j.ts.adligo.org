@@ -1,7 +1,8 @@
 {
   "author": "Scott Morgan",
   "bin": {
-    "junitXmlTests4jGenerator": "./dist/junitXmlTests4jGenerator.mjs"
+    "junitXmlTests4jGenerator.mjs": "./dist/junitXmlTests4jGenerator.mjs",
+    "junitXmlTests4jGenerator.mts": "./src/junitXmlTests4jGenerator.mts"
   },
   "bugs": {
     "url": "https://github.com/adligo/junit-xml-tests4j.ts.adligo.org/issues"
@@ -41,5 +42,5 @@
     "fab_group_deps.ts.adligo.org"
   ],
   "type": "module",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
