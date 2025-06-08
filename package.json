@@ -23,7 +23,7 @@
     "typescript"
   ],
   "license": "Apache-2.0",
-  "name": "@ts.adligo.org/junitXml.tests4j",
+  "name": "@ts.adligo.org/junit-xml-tests4j",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adligo/junitXml.tests4j.ts.adligo.org.git"

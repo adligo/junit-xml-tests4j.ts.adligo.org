@@ -19,21 +19,27 @@
 // The following commented out xml tags with slinks will flag to the slink command line program, that these paths can be modfied 
 // from the slink logic instead of hard coding them like I have currently done.
 //<slinks>
-import { ApiTrial, I_XmlConverter, TestResult } from '@ts.adligo.org/tests4ts/dist/tests4ts.mjs';
+import {I_FileConverter} from "@ts.adligo.org/i_tests4ts/src/i_tests4ts.mjs";
+import { ApiTrial, TestResult } from '@ts.adligo.org/tests4ts/dist/tests4ts.mjs';
 //</slinks>
 
 /**
  * Generates JUnit XML format from tests4ts test results
  */
-export class JUnitXmlGenerator implements I_XmlConverter {
+export class JUnitXmlGenerator implements I_FileConverter {
+
 
   /**
    * Bind to test4ts I_XmlConverter
    * @param trial 
    * @returns 
    */
-  convertToXml(trial: ApiTrial): string {
+  convert(trial: ApiTrial): string {
     return this.generateXml(trial);
+  }
+
+  getFileNameExtension(): string {
+    return "xml";
   }
 
   /**
