@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "echo @see the https://github.com/adligo/junit-xml-tests4j.tests4j.ts.adligo.org project \n and https://github.com/adligo/slink_group.ts.adligo.org",
-    "build": "npm run tsc && slink -p -d",
+    "build": "tsc && slink -p",
     "tsc": "tsc"
   },
   "sharedNodeModuleProjectSLinkEnvVar": [
@@ -42,5 +42,5 @@
     "fab_group_deps.ts.adligo.org"
   ],
   "type": "module",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }

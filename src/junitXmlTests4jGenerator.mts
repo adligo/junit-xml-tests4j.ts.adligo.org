@@ -20,7 +20,7 @@
 // from the slink logic instead of hard coding them like I have currently done.
 //<slinks>
 import { I_FileConverter, I_TestResult, I_Trial
-} from "@ts.adligo.org/i_tests4ts/src/i_tests4ts.mjs";
+} from "@ts.adligo.org/i_tests4ts/dist/i_tests4ts.mjs";
 import { TestResult } from '@ts.adligo.org/tests4ts/dist/results.mjs';
 import { ApiTrial } from '@ts.adligo.org/tests4ts/dist/trials.mjs';
 //</slinks>
