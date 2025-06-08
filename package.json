@@ -4,9 +4,9 @@
     "junitXmlTests4jGenerator": "./dist/junitXmlTests4jGenerator.mjs"
   },
   "bugs": {
-    "url": "https://github.com/adligo/junitXml.tests4j.ts.adligo.org/issues"
+    "url": "https://github.com/adligo/junit-xml-tests4j.ts.adligo.org/issues"
   },
-  "description": "This is the implementation of junitXml.tests4j.ts.adligo.org.",
+  "description": "This is the implementation of junit-xml-tests4j.ts.adligo.org.",
   "dependencies": {
     "npm": "^11.4.0"
   },
@@ -14,7 +14,7 @@
     "@types/node": "^22.15.21",
     "typescript": "^5.0.4"
   },
-  "homepage": "https://github.com/adligo/junitXml.tests4j.ts.adligo.org#readme",
+  "homepage": "https://github.com/adligo/junit-xml-tests4j.ts.adligo.org#readme",
   "keywords": [
     "junit",
     "xml",
@@ -26,10 +26,10 @@
   "name": "@ts.adligo.org/junit-xml-tests4j",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adligo/junitXml.tests4j.ts.adligo.org.git"
+    "url": "git+https://github.com/adligo/junit-xml-tests4j.ts.adligo.org.git"
   },
   "scripts": {
-    "test": "echo @see the https://github.com/adligo/junitXml_tests.tests4j.ts.adligo.org project \n and https://github.com/adligo/slink_group.ts.adligo.org",
+    "test": "echo @see the https://github.com/adligo/junit-xml-tests4j.tests4j.ts.adligo.org project \n and https://github.com/adligo/slink_group.ts.adligo.org",
     "build": "npm run tsc && slink -p -d",
     "tsc": "tsc"
   },
@@ -41,5 +41,5 @@
     "fab_group_deps.ts.adligo.org"
   ],
   "type": "module",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
