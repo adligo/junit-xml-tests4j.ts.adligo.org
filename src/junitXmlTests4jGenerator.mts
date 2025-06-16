@@ -67,7 +67,7 @@ export class JUnitXmlGenerator implements I_FileConverter {
     
     // Add testcase elements
     testResults.forEach(result => {
-      xml += this.generateTestCaseXml(result);
+      xml += this.generateTestCaseXml(trial, result);
     });
     
     // Add system output sections
@@ -83,8 +83,8 @@ export class JUnitXmlGenerator implements I_FileConverter {
    * @param result The test result
    * @returns XML string for the test case
    */
-  private generateTestCaseXml(result: I_TestResult): string {
-    const testName = result.getName();
+  private generateTestCaseXml(trial: I_Trial, result: I_TestResult): string {
+    const testName =  trial.getName() + '.' + result.getName();
     const className = this.extractClassName(result.getName());
     const time = 0.001; // Placeholder since actual time isn't tracked
     
