@@ -84,8 +84,8 @@ export class JUnitXmlGenerator implements I_FileConverter {
    * @returns XML string for the test case
    */
   private generateTestCaseXml(trial: I_Trial, result: I_TestResult): string {
-    const testName =  trial.getName() + '.' + result.getName();
-    const className = this.extractClassName(result.getName());
+    const testName =  result.getName();
+    const className = trial.getName();
     const time = 0.001; // Placeholder since actual time isn't tracked
     
     let xml = `  <testcase name="${testName}" classname="${className}" time="${time}"`;
